@@ -1,0 +1,18 @@
+{% extends "master.html" %}
+
+{% block title %}
+    Details about {{tasksdata.progress}}
+{% endblock %}
+
+
+{% block content %}
+<h1>{{ Tasks}}</h1>
+
+<p>Start time: {{tasksdata.start_time}}</p>
+<p>progress: {{tasksdata.progress}}</p>
+<p>End time: {{tasksdata.end_time}}</p>
+
+<p>Back to <a href="/Tasks">Tasks</a></p>
+
+
+{% endblock %}

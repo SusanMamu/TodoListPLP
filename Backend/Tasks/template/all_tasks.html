@@ -1,0 +1,22 @@
+{% extends "master.html" %}
+
+{% block title %}
+    To Do List - List of all tasks
+{% endblock %}
+
+
+{% block content %}
+
+<p><a href="/">HOME</a> </p>
+<h1>Tasks</h1>
+
+<ul>
+    {% for x in tasksdata %}
+    <li><a href="details/{{ x.id }}">{{x.start_time }} {{x.progress}} {{x.end_time}}</a></li>
+    {% endfor %}
+</ul>
+{% endblock %}
+
+
+
+
